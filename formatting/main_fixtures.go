@@ -2,40 +2,40 @@ package formatting
 
 func thing1() Thing {
 	return Thing{
-		Name: "foo",
-		Version: "1.2.3",
+		Name:        "foo",
+		Version:     "1.2.3",
 		Description: "The quick fox jumped over the lazy brown dog.",
 	}
 }
 
 func thing2() Thing {
 	return Thing{
-		Name: "goongala",
-		Version: "1.5.3",
+		Name:        "goongala",
+		Version:     "1.5.3",
 		Description: "Default description.",
 	}
 }
 
 func thing3() Thing {
 	return Thing{
-		Name: "glortswaggle",
-		Version: "2.2.2",
+		Name:        "glortswaggle",
+		Version:     "2.2.2",
 		Description: "Doodle Doodle Dee, Wubba Wubba Wubba.",
 	}
 }
 
 func thing4() Thing {
 	return Thing{
-		Name: "freddled-gruntbuggly",
-		Version: "9.2.3",
+		Name:        "freddled-gruntbuggly",
+		Version:     "9.2.3",
 		Description: "Lorem ipsum dolor blah blah blah blah blah blab",
 	}
 }
 
 func thing5() Thing {
 	return Thing{
-		Name: "frobnitz",
-		Version: "1.0.0",
+		Name:        "frobnitz",
+		Version:     "1.0.0",
 		Description: "word.",
 	}
 }

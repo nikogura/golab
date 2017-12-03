@@ -1,10 +1,10 @@
 package main
 
 import (
-	"net/http"
-	"log"
 	"fmt"
 	"github.com/nikogura/redisproxy/proxy/cache"
+	"log"
+	"net/http"
 	"time"
 )
 
@@ -13,7 +13,6 @@ type proxycache struct {
 }
 
 func (p proxycache) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-
 
 	fmt.Fprintf(w, "blah blah blah: %s", r.URL.Path)
 }
@@ -34,12 +33,11 @@ func fetcher(key string, redisAddr string) (value interface{}, err error) {
 	return value, err
 }
 
-
 func main() {
 
 	//send, receive := make(chan string), make(chan interface{})
 
-	c := cache.NewCache(3, time.Second * 30, fetcher, time.Second * 5, "")
+	c := cache.NewCache(3, time.Second*30, fetcher, time.Second*5, "")
 
 	err := http.ListenAndServe("0.0.0.0:8080", proxycache{c: c})
 	log.Fatal(err)

@@ -5,9 +5,9 @@
 package example
 
 import (
-"log"
-"net/http"
-"time"
+	"log"
+	"net/http"
+	"time"
 )
 
 const (
@@ -114,4 +114,3 @@ func main() {
 		go r.Sleep(pending)
 	}
 }
-

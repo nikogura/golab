@@ -1,9 +1,9 @@
 package template
 
 import (
-	"testing"
-	"log"
 	"github.com/stretchr/testify/assert"
+	"log"
+	"testing"
 )
 
 func TestSimpleTemplate(t *testing.T) {

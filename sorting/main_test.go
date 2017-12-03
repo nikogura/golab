@@ -1,11 +1,11 @@
 package sorting
 
 import (
-	"testing"
+	"fmt"
 	"github.com/magiconair/properties/assert"
 	"log"
 	"sort"
-	"fmt"
+	"testing"
 )
 
 func TestSortStuff(t *testing.T) {
@@ -14,10 +14,10 @@ func TestSortStuff(t *testing.T) {
 
 	actual := SortStuff(testStringsUnsorted())
 
-	log.Printf("Unsorted: %s", testStringsUnsorted() )
+	log.Printf("Unsorted: %s", testStringsUnsorted())
 	log.Printf("Sorted: %s", actual)
 
-	assert.Equal(t, expected, actual, "Sort works as expected" )
+	assert.Equal(t, expected, actual, "Sort works as expected")
 }
 
 func TestFourLevel(t *testing.T) {

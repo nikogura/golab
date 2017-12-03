@@ -1,8 +1,8 @@
 package formatting
 
 import (
-	"testing"
 	"log"
+	"testing"
 )
 
 func TestFixedColumnOutput(t *testing.T) {

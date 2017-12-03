@@ -6,7 +6,7 @@ func testStringsUnsorted() []string {
 	return strs
 }
 
-func testStringsSorted() [] string {
+func testStringsSorted() []string {
 	sorted := []string{"a", "f", "w"}
 
 	return sorted

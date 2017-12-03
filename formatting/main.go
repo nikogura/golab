@@ -6,8 +6,8 @@ import (
 )
 
 type Thing struct {
-	Name string
-	Version string
+	Name        string
+	Version     string
 	Description string
 }
 
@@ -34,7 +34,7 @@ func FixedColumnOutput(data []Thing) (output []string) {
 		formatstring := fmt.Sprintf("%%%ds%%s%%s%%s%%s\n", fieldLength)
 
 		// Then can fill with variables
-		output = append(output, fmt.Sprintf(formatstring, thing.Name, pad, thing.Version, pad, thing.Description ))
+		output = append(output, fmt.Sprintf(formatstring, thing.Name, pad, thing.Version, pad, thing.Description))
 	}
 
 	return output

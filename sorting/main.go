@@ -10,10 +10,10 @@ func SortStuff(strs []string) []string {
 }
 
 type Thing struct {
-	One string
-	Two string
+	One   string
+	Two   string
 	Three string
-	Four string
+	Four  string
 }
 
 type FourLevel []Thing
