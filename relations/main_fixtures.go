@@ -45,6 +45,7 @@ func testPeople() map[string]Person {
 		Name: "groucho",
 		Relations: []string{
 			"zoe",
+			"simon",
 		},
 	}
 

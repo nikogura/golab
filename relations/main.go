@@ -6,7 +6,7 @@ import (
 )
 
 // Given two Persons, each having a Name, and a list of relations (other people), find the degree to which they are related.
-// I.e. Walk the (possibly cyclic) web of relations and return the shortest path between persion A and person B without needing to traverse the entire web.
+// I.e. Walk the (possibly cyclic) web of relations and return the shortest path between persion A and person B.
 // Do it quickly and efficiently of course.
 
 // Person stores a person.  A name- which must be unique and a list of relations that are people.
