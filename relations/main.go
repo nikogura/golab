@@ -27,7 +27,7 @@ func FindDegreesOfSeparationAnon(people map[string]Person, start string, target 
 	// It's a map so lookups are in constant time
 	seen := make(map[string]bool)
 
-	// Need a struct with a list to track the path from Start to Finish
+	// Need a list to track the path from Start to Finish
 	journey = []string{start}
 
 	// return early if someone is playing silly buggers
